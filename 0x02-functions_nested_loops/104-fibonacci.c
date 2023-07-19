@@ -14,15 +14,15 @@ int main(void)
 
 	for (num = 0; num < 92; num++)
 	{
-		sum = x + y;
+		sum = fib_num1 + fib_num2;
 		printf("%lu, ", sum);
-		x = y;
-		y = sum;
+		fib_num1 = fib_num2;
+		fib_num2 = sum;
 	}
-	a = x / 10000000000;
-	b = x % 10000000000;
-	c = y / 10000000000;
-	d = y % 10000000000;
+	a = fib_num1 / 10000000000;
+	b = fib_num1 % 10000000000;
+	c = fib_num2 / 10000000000;
+	d = fib_num2 % 10000000000;
 
 	for (num = 93; num < 99; num++)
 	{
