@@ -22,5 +22,6 @@ void more_numbers(void)
 			col++;
 		}
 		_putchar('\n');
+		row++;
 	}
 }
