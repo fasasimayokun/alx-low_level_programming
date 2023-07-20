@@ -8,7 +8,7 @@ int main(void)
 {
 	int i = 1;
 
-	while (i < 100)
+	while (i <= 100)
 	{
 		if (i % 3 == 0)
 		{
@@ -32,5 +32,6 @@ int main(void)
 		}
 		i++;
 	}
+	printf("\n");
 	return (0);
 }
