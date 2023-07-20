@@ -10,14 +10,17 @@ void more_numbers(void)
 
 	while (row < 10)
 	{
-		char col = '0';
+		int col = 0;
 
-		while (col <= '14')
+		while (col <= 14)
 		{
-			_putchar(col);
+			if (col >= 10)
+			{
+				_putchar(49);
+			}
+			_putchar(col % 10 + 48);
 			col++;
 		}
 		_putchar('\n');
 	}
-	_putchar('\n');
 }
