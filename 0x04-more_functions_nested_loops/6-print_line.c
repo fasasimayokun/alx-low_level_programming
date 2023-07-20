@@ -6,16 +6,19 @@
  */
 void print_line(int n)
 {
-	int num = 0;
-
-	while (num < n)
-	{
-		if (n == 0 || n < 0)
+		if (n <= 0)
 		{
 			_putchar('\n');
-			break;
 		}
-		_putchar('_');
-		num++;
-	}
+		else
+		{
+			int num = 0;
+
+			while (num < n)
+			{
+				_putchar('_');
+				num++;
+			}
+			_putchar('\n');
+		}
 }
