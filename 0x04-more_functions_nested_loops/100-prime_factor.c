@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <math.h>
 /**
  * main - prime factors of 1231952 are 2, 2, 2, 2, 37 and 2081
  * Return: Always 0
