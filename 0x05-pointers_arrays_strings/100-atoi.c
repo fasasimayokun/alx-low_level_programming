@@ -11,6 +11,10 @@ int _atoi(char *s)
 
 	while (s[count] != '\0')
 	{
+		count++;
+	}
+	while (x < count && a == 0)
+	{
 		if (s[x] == '-')
 			++y;
 
