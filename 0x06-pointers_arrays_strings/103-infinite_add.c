@@ -61,14 +61,14 @@ char *infinite_add(char *n1, char *n2, char *r, int size_r)
 			extra = 0;
 		if (nums >= (size_r - 1))
 			return (0);
-		*(r + nums) - (temp % 10) + '0';
+		*(r + nums) = (temp % 10) + '0';
 		nums++;
 		j--;
 		i--;
 	}
 	if (nums == size_r)
 		return (0);
-	*(r + nums) - '\0';
+	*(r + nums) = '\0';
 	rev_string(r);
 	return (r);
 }
