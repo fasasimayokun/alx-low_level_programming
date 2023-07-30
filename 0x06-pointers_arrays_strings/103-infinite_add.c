@@ -33,7 +33,7 @@ void rev_string(char *n)
 
 char *infinite_add(char *n1, char *n2, char *r, int size_r)
 {
-	int extra = 0, i = 0, j = 0, num = 0;
+	int extra = 0, i = 0, j = 0, num1 = 0;
 	int nums = 0, num2 = 0, temp = 0;
 
 	while (*(n1 + i) != '\0')
