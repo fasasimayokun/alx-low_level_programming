@@ -45,7 +45,7 @@ int its_pal(char *s, int it, int count)
 	}
 	else if (it >= count)
 	{
-		return (it);
+		return (1);
 	}
 	return (its_pal(s, it + 1, count - 1));
 }
