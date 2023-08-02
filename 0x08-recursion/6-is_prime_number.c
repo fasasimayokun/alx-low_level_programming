@@ -1,11 +1,12 @@
 #include "main.h"
+int _check_prime(int n, int it);
 /**
  * is_prime_number - a function that returns 1 if the input
  * integer is a prime number, otherwise return 0.
  * @n: input val
  * Return: int val
  */
-int _check_prime(int n, int it);
+
 
 int is_prime_number(int n)
 {
@@ -23,11 +24,11 @@ int _check_prime(int n, int it)
 	{
 		return (0);
 	}
-	if (n % it == 0 && it > 1)
+	else if (n % it == 0 && it > 1)
 	{
 		return (0);
 	}
-	if ((n / it) < it)
+	else if ((n / it) < it)
 	{
 		return (1);
 	}
