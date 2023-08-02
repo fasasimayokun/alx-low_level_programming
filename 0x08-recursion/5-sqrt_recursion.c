@@ -4,6 +4,8 @@
  * @n: the input valu to find the sqrt of
  * Return: the result
  */
+int _real_sqrt_recursion(int n, int it);
+
 int _sqrt_recursion(int n)
 {
 	if (n < 0)
