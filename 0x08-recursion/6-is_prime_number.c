@@ -23,11 +23,11 @@ int _check_prime(int n, int it)
 	{
 		return (0);
 	}
-	else if (n % it == 0 && it > 1)
+	if (n % it == 0 && it > 1)
 	{
 		return (0);
 	}
-	else if ((n / it) < it)
+	if ((n / it) < it)
 	{
 		return (1);
 	}
