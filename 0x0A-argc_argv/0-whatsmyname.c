@@ -6,8 +6,9 @@
  * @argv: arr of arguments
  * Return: 0 (success)
  */
-int main(int argc, __attribute_((unsed)), char *argv[])
+int main(int argc, char *argv[])
 {
+	(void) argc;
 	printf("%s\n", *argv);
 	return (0);
 }
