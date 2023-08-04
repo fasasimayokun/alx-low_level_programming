@@ -35,7 +35,7 @@ int _atoi(char *s)
 
 	if (d == 0)
 		return (0);
-	return (0);
+	return (c);
 }
 /**
  * main - mul two number
