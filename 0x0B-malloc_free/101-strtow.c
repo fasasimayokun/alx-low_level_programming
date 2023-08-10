@@ -55,7 +55,7 @@ char **strtow(char *str)
 				if (tmp == NULL)
 					return (NULL);
 				while (begin < stop)
-					*tmp = str[begin++];
+					*tmp++ = str[begin++];
 				*tmp = '\0';
 				grid[b] = tmp - c;
 				b++;
