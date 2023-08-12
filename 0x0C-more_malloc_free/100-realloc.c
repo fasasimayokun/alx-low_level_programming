@@ -1,3 +1,4 @@
+#include <stdlib.h>
 #include "main.h"
 /**
  * _realloc - a function that reallocates
