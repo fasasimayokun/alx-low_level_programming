@@ -5,12 +5,15 @@
  * @op: the operation
  * @f: the coreresponding func
  */
-typedef struct op
+struct op
 {
 	char *op;
-	int(*f)(int x, int y);
-}op_t;
-
+	int (*f)(int x, int y);
+};
+/**
+ * op_t - new struct name
+ */
+typedef struct op op_t;
 int op_add(int x, int y);
 int op_sub(int x, int y);
 int op_mul(int x, int y);
