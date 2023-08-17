@@ -2,14 +2,14 @@
 #define CALC_H
 /**
  * struct op - a struct op
- * @opp: the operation
+ * @op: the operation
  * @f: the coreresponding func
  */
 typedef struct op
 {
-	char *opp;
+	char *op;
 	int(*f)(int x, int y);
-}opt_t;
+}op_t;
 
 int op_add(int x, int y);
 int op_sub(int x, int y);
