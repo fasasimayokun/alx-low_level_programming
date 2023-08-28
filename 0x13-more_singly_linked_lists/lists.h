@@ -7,12 +7,12 @@
 
 /**
  * struct listint_s - singly linked list
- * @elem: int
+ * @n: int
  * @next: pointer to the next node
  */
 struct listint_s
 {
-	int elem;
+	int n;
 	struct listint_s *next;
 };
 /*
