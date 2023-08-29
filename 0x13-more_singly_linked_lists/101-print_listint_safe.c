@@ -6,7 +6,7 @@ size_t iterate_listint_uniq(const listint_t *head);
  * @head: pointer to the 1st node
  * Return: num of uniq nodes
  */
-size iterate_listint_uniq(const listint_t *head)
+size_t iterate_listint_uniq(const listint_t *head)
 {
 	const listint_t *slow, *fast;
 	size_t nd = 1;
