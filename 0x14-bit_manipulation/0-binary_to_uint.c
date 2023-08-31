@@ -1,0 +1,23 @@
+#include "main.h"
+/**
+ * binary_to_unit - a func that converts a binary num to unsigned int
+ * @b: array of chars containing the binary num
+ * Return: converted num
+ */
+unsigned int binary_to_unit(const char *b)
+{
+	int nm;
+	unsigned int bas_ten = 0;
+
+	if (b == NULL)
+		return (0);
+	for (nm = 0; b[nm] != NULL; nm++)
+	{
+		if (b[nm] < '0' || b[nm] > '1')
+		{
+			return (0);
+		}
+		bas_ten = 2 * bas_ten + (b[nm] - '0');
+	}
+	return (bas_ten);
+}
