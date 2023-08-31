@@ -9,9 +9,11 @@ unsigned int binary_to_unit(const char *b)
 	int nm;
 	unsigned int bas_ten = 0;
 
-	if (b == NULL)
+	if (!b)
+	{
 		return (0);
-	for (nm = 0; b[nm] != NULL; nm++)
+	}
+	for (nm = 0; b[nm]; nm++)
 	{
 		if (b[nm] < '0' || b[nm] > '1')
 		{
