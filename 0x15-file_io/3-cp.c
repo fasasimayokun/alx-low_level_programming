@@ -8,7 +8,7 @@ void close_file(int fpth);
  * @argv: an arr of addresses to the args.
  * Return: 0 (success)
  */
-int main(int argc, char[] *argv)
+int main(int argc, char *argv[])
 {
 	int frm;
 	int tt;
@@ -23,7 +23,7 @@ int main(int argc, char[] *argv)
 	}
 	bufr = make_bufr(argv[2]);
 	frm = open(argv[1], O_RDONLY);
-	rd = read(from, buffer, 1024);
+	rd = read(frm, bufr, 1024);
 	tt = open(argv[2], O_CREAT | O_WRONLY | O_TRUNC, 0664);
 
 	do {
@@ -71,15 +71,17 @@ char *make_bufr(char *file)
 /**
  * close_file - a func that closes file description
  * @fpth: the file path to close
- * Return: void (nothing)
+i * Return: void (nothing)
  */
 void close_file(int fpth)
 {
+	int cls;
+
 	cls = close(fpth);
 
 	if (cls == -1)
 	{
-		dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", fd);
+		dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", fpth);
 		exit(100);
 	}
 }
