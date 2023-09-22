@@ -5,7 +5,7 @@
  */
 void echo_version(unsigned char *elf_num)
 {
-	 printf(" Version: %d", elf_num[EI_VERSION]);
+	 printf("  Version:                            %d", elf_num[EI_VERSION]);
 
 	switch (elf_num[EI_VERSION])
 	{
