@@ -7,7 +7,7 @@
  */
 void echo_abi(unsigned char *elf_num)
 {
-	printf(" ABI Version:                        %d\n", elf_num[EI_ABIVERSION]);
+	printf("  ABI Version:                       %d\n", elf_num[EI_ABIVERSION]);
 }
 
 /**
@@ -19,9 +19,11 @@ void echo_abi(unsigned char *elf_num)
 void echo_type(unsigned int elf_type, unsigned char *elf_num)
 {
 	if (elf_num[EI_DATA] == ELFDATA2MSB)
+	{
 		elf_type >>= 8;
+	}
 
-	printf("  Type:                               ");
+	printf("  Type:                              ");
 
 	switch (elf_type)
 	{
@@ -78,7 +80,7 @@ void echo_entry(unsigned long int elf_entry, unsigned char *elf_num)
  */
 void echo_osabi(unsigned char *elf_num)
 {
-	printf("  OS/ABI:                             ");
+	printf("  OS/ABI:                            ");
 
 	switch (elf_num[EI_OSABI])
 	{

@@ -81,7 +81,7 @@ void echo_magic(unsigned char *elf_num)
 {
 	int pos;
 
-	printf("  Magic:    ");
+	printf("  Magic:   ");
 
 	for (pos = 0; pos < EI_NIDENT; pos++)
 	{
@@ -104,7 +104,7 @@ void echo_magic(unsigned char *elf_num)
  */
 void echo_class(unsigned char *elf_num)
 {
-	printf("  Class:                            ");
+	printf("  Class:                             ");
 
 	switch (elf_num[EI_CLASS])
 	{
